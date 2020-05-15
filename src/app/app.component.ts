@@ -19,6 +19,7 @@ export class AppComponent {
   title = 'chatApp';
   items: AngularFireList<any>;
   username: any;
+  msgValue: string = '';
 
   constructor(public afd: AngularFireDatabase, public afa: AngularFireAuth){
     //get the last 5 sent messages
