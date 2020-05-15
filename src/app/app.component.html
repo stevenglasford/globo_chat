@@ -1,6 +1,6 @@
 <div class="row columns">
   <button (click)="login()" *ngIf="!username">Login with email</button>
-  <input type="text" id="message" *ngIf="name" placeholder="Write a message..."
+  <input type="text" id="message" *ngIf="username" placeholder="Write a message..."
     (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgValue" />
 
     <div class="chat-container" *ngFor="let item of items | async">
